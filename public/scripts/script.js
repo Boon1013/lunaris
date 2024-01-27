@@ -41,6 +41,7 @@ function register () {
 				creation: Date.now(),
 				date_of_birth: dob,
 				account_type: "player",
+				about: "No bio yet.",
 				userbadges: [0],
 				friends: [0],
 				following: [0],
