@@ -1,0 +1,213 @@
+body {
+	background: #232527;
+	color: #FFF;
+	font-family: HCo Gotham SSm,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+.TopBar {
+	background: #191b1d;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 2px solid #111214;
+}
+
+.TopLeftButton {
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	font-weight: 600;
+	
+}
+
+.HoverUnderline:hover {
+	border-bottom: solid #FFF;
+}
+
+.BlankUnderline {
+	border-bottom: solid #191b1d;
+}
+
+.TopBlankText {
+	color: #191b1d;
+}
+
+.TopSettingsButton img {
+	height: 300%;
+	width: 150%;
+}
+
+.TopSettingsButton {
+	padding-top: 0.25%;
+	padding-bottom: 0.5%;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	position: absolute;
+	right: 0%;
+	vertical-align: middle;
+	display: inline-block;
+	height: 1%;
+	width: 1%;
+	font-weight: 500;
+}
+
+.TopLoginButton {
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	position: absolute;
+	right: 4%;
+	vertical-align: middle;
+	display: inline-block;
+	font-weight: 500;
+	border-radius: 10px;
+	border: 1px solid #606162;
+	width: 3.5%;
+	height: 1.4%;
+	padding: 0.5%;
+	top: 0.4%;
+}
+
+.TopSignUpButton {
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	position: absolute;
+	right: 9.3%;
+	vertical-align: middle;
+	display: inline-block;
+	font-weight: 500;
+	border-radius: 10px;
+	background: #00b06f;
+	width: 3.5%;
+	height: 1.4%;
+	padding: 0.5%;
+	top: 0.4%;
+}
+
+.SignUpText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	white-space: nowrap;
+}
+
+.LoginText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	white-space: nowrap;
+}
+
+.temp {
+	color: #FFF;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ErrorDiv {
+	background-color: #393b3d;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 45%;
+	height: 45%;
+}
+
+.ErrorHeader {
+	color: #FFF;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+.ErrorCode {
+	color: #FFF;
+	position: absolute;
+	top: 30%;
+	left: 5%;
+}
+
+.ErrorReturnHome {
+	color: #FFF;
+	position: absolute;
+	top: 80%;
+	left: 14%;
+	text-decoration: none;
+	width: 3.5%;
+	height: 1.4%;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 0;
+	padding: 2%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	border: 1px solid #606162;
+}
+
+.ErrorReturnHome p1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	white-space: nowrap;
+}
+
+.ErrorReturnBack {
+	background-color: #FFF;
+	color: #393b3d;
+	position: absolute;
+	top: 80%;
+	left: 5%;
+	text-decoration: none;
+	width: 3.5%;
+	height: 1.4%;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 0;
+	padding: 2%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+.ErrorReturnBack p1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	white-space: nowrap;
+}
