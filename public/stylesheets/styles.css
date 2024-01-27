@@ -126,15 +126,6 @@ body {
 	white-space: nowrap;
 }
 
-.temp {
-	color: #FFF;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 .ErrorDiv {
 	background-color: #393b3d;
 	margin: 0;
@@ -210,4 +201,24 @@ body {
 	transform: translate(-50%, -50%);
 	margin: 0;
 	white-space: nowrap;
+}
+
+
+.temp {
+	color: #FFF;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.templower {
+	color: #FFF;
+	margin: 0;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

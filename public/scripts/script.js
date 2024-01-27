@@ -19,6 +19,7 @@ function register () {
 	username = document.getElementById("username").value
 	email = document.getElementById("email").value
 	password = document.getElementById("password").value
+	dob = document.getElementById("dob").value
 	
 	if (validate_email(email) == false || validate_password(password) == false || validate_username(username) == false) {
 		return
@@ -30,15 +31,31 @@ function register () {
 		
 		var database_ref = database.ref()
 		
-		var uid = newUid();
-		
-		var user_data = {
-			email: email,
-			username: username,
-			last_login: Date.now()
-		}
-		
-		database_ref.child('users/' + uid).set(user_data)
+
+		newUid().then(uid => {
+			//console.log("test" + uid)
+
+			var user_data = {
+				email: email,
+				username: username,
+				creation: Date.now(),
+				date_of_birth: dob,
+				account_type: "player",
+				userbadges: [0],
+				friends: [0],
+				following: [0],
+				followers: [0],
+				luna: 0,
+				games: [0],
+				favourites: [0],
+				likes: [0],
+				playerbadges: [0],
+				groups: [0],
+				last_login: Date.now()
+			}
+
+			database_ref.child('users/' + uid).set(user_data)
+		})
 		
 	})
 	.catch(function(error) {
@@ -81,21 +98,25 @@ function login() {
 }
 
 async function newUid() {
-	
-	database_ref = database.ref()
-	snapshot = await database_ref.child("users/last_uid").get();
-	if (snapshot.exists) {
-		console.log(snapshot.value);
-		var uid = snapshot.value.child("uid");
-		var newuid = uid + 1
-			
-		console.log(newuid)
-	
-		database_ref.update({uid: newuid})
-		return newuid
-	} else {
-		console.log('No data available.');
-	}
+	const dbRef = firebase.database().ref("users/last_uid");
+	return dbRef.get().then((snapshot) => {
+		if (snapshot.exists()) {
+			//console.log(snapshot.val());
+			var uid = snapshot.val().uid
+			var newuid = uid + 1
+
+			//console.log(newuid);
+
+			dbRef.update({ uid: newuid });
+
+			return newuid
+		} else {
+			console.log("No data available");
+		}
+	}).catch((error) => {
+		console.error(error);
+		alert(error)
+	});
 }
 
 function validate_email(email) {
