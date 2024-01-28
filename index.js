@@ -6,7 +6,7 @@ ejsApp.set('view engine', 'ejs')
 ejsApp.set('views', path.join(__dirname, 'views'))
 ejsApp.use(express.static(path.join(__dirname, 'public')));
 
-const port = 3000
+const port = 24300
 
 ejsApp.get('/', (req, res) => {
     res.render('home', { title: 'Home' });
