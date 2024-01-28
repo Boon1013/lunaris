@@ -1,5 +1,2 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/.vs/Lunaris/FileContentIndex/0092b0a0-2002-4ee3-b1c9-c75e58fac80c.vsidx
+﻿.vs
+node_modules
